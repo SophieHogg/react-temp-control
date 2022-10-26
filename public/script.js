@@ -1,6 +1,6 @@
 window.onload = function () {
     var pageTitle = document.title;
-    var attentionMessage = "Change temperature!";
+    var attentionMessage = "Isn't it hot in here ...?";
     var blinkEvent = null;
 
     document.addEventListener("visibilitychange", function (e) {

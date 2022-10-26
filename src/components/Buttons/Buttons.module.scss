@@ -1,0 +1,48 @@
+@use "./../../assets/palette";
+@import "./../../assets/respmixin";
+
+.Buttons {
+    background-color: palette.$body-colour;
+    padding: 10px;
+    font-size: 25px;
+    &__plus {
+        padding: 10px 30px 10px 30px;
+        border: 3px solid palette.$ring-hot-colour;
+        font-size: 25px;
+        margin: 20px;
+        border-radius: 5px;
+        background-color: palette.$button-hot-colour;
+        font-weight: 600;
+        @include wider-than-tablet {
+            width: 200px;
+            height: 100px;
+            font-size: 50px;
+        }
+        &:hover {
+            cursor: pointer;
+            background-color: palette.$ring-hot-colour;
+            border: 3px solid palette.$button-hot-colour;
+            color: white;
+        }
+    }
+    &__minus {
+        padding: 10px 30px 10px 30px;
+        border: 3px solid palette.$ring-cold-colour;
+        font-size: 25px;
+        margin: 20px;
+        border-radius: 5px;
+        background-color: palette.$button-cold-colour;
+        font-weight: 600;
+        @include wider-than-tablet {
+            width: 200px;
+            height: 100px;
+            font-size: 50px;
+        }
+        &:hover {
+            cursor: pointer;
+            background-color: palette.$ring-cold-colour;
+            border: 3px solid palette.$button-cold-colour;
+            color: white;
+        }
+    }
+}

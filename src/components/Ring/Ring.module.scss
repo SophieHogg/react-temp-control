@@ -1,0 +1,61 @@
+@use "./../../assets/palette";
+@import "./../../assets/respmixin";
+
+.Ring {
+    background-color: palette.$body-colour;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0px 20px 0px;
+
+    &__circle {
+        background-color: palette.$ring-contents-colour;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        width: 300px;
+        height: 300px;
+        font-size: 50px;
+        &__warm {
+            background-color: palette.$ring-contents-colour;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            width: 280px;
+            height: 280px;
+            font-size: 50px;
+            border: 20px solid palette.$ring-hot-colour;
+            @include wider-than-phone {
+                font-size: 70px;
+            }
+            @include wider-than-tablet {
+                font-size: 100px;
+                width: 500px;
+                height: 500px;
+                border: 40px solid palette.$ring-hot-colour;
+            }
+        }
+        &__cold {
+            background-color: palette.$ring-contents-colour;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            width: 280px;
+            height: 280px;
+            font-size: 50px;
+            border: 20px solid palette.$ring-cold-colour;
+            @include wider-than-phone {
+                font-size: 70px;
+            }
+            @include wider-than-tablet {
+                font-size: 100px;
+                width: 500px;
+                height: 500px;
+                border: 40px solid palette.$ring-cold-colour;
+            }
+        }
+    }
+}

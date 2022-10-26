@@ -1,0 +1,24 @@
+$phone: 450px;
+// used for min-width only as this is a mobile first design.
+$phone-ls: 650px;
+$tablet: 768px;
+$tablet-ls: 1024px;
+$laptop: 1400px;
+
+@mixin phone-ls {
+    @media (min-width: $phone) and (max-width: $phone-ls) {
+        @content;
+    }
+}
+
+@mixin wider-than-phone {
+    @media (min-width: $phone-ls) {
+        @content;
+    }
+}
+
+@mixin wider-than-tablet {
+    @media (min-width: $tablet-ls) {
+        @content;
+    }
+}
