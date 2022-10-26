@@ -22,7 +22,7 @@ HTML, SCSS, React
 
 ### Time Allowance
 
-3 hours - took approximately 2.5 hours with all styling, design, SEO elements, responsiveness, etc.
+I allowed myself 3 hours to complete this project from start to finish. It took approximately two hours including all styling, design, SEO elements, responsiveness, etc.
 
 ### Hooks used
 
