@@ -1,6 +1,6 @@
-# Temperature Control (COMPLETE)
+# React Temperature Control App (COMPLETE)
 
-Single-day React project that allows you to change the temperature and changes the background depending on the temperature.
+Single-day React project that allows you to change the temperature and changes the background depending on the temperature. A mock project for a Daikin air conditioner remote for your phone.
 
 NOTE: This project was not commissioned by Daikin or indicative of Daikin in any way, I just own a Daikin air conditioner and decided to make a temperature control application.
 
